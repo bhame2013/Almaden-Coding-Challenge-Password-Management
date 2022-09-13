@@ -22,8 +22,8 @@ const PasswordContext = createContext<ContextPassword>({
 });
 
 const usePasswordController = (search: string): ContextPassword => {
-  const GetFolders = () => new FolderApi().getFolders();
-  const GetPasswords = () => new PasswordApi().getPasswords();
+  const GetFolders = async () => await new FolderApi().getFolders();
+  const GetPasswords = async () => await new PasswordApi().getPasswords();
 
   const responseFolders = useSWR("/folders", GetFolders);
   const responsePasswords = useSWR("/passwords", GetPasswords);

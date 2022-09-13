@@ -23,7 +23,7 @@ export class PasswordApi {
 
   async createPassword(password: IPassword) {
     try {
-    const { data } = await api.post(`/passwords`, { ...password, id: undefined });
+    const { data } = await api.post(`/passwords`, { ...password});
 
     return data
     }catch(e) {

@@ -1,8 +1,8 @@
 {
   "folders": [
     {
-      "id:": 1,
-      "none": "none" 
+      "nome": "none",
+      "id": 1
     }
   ],
   "passwords": []

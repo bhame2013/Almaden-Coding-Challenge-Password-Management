@@ -25,10 +25,9 @@ export function Select({ name, label, options, ...rest }: SelectProps) {
     setSelectOptions(
       options.filter(
         ({ label, value }) =>
-          label
-            .toLocaleLowerCase()
-            .includes(e.target.value.toLocaleLowerCase()) ||
-          value.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+          label?.toLocaleLowerCase()
+            .includes(e?.target?.value?.toLocaleLowerCase()) ||
+          value?.toLocaleLowerCase()?.includes(e?.target?.value?.toLocaleLowerCase())
       ) || options
     );
   }, []);

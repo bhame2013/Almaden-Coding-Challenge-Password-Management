@@ -15,7 +15,7 @@ import { PasswordApi } from "./password-service";
 function FilterPasswords(passwords: IPassword[], search) {
   return passwords.filter((password) => {
     const filteredPassword = Object.values(password).filter((atr) =>
-      String(atr).toLocaleLowerCase().includes(search.toLocaleLowerCase())
+      String(atr)?.toLocaleLowerCase().includes(search?.toLocaleLowerCase())
     );
 
     if (filteredPassword.length > 0) {

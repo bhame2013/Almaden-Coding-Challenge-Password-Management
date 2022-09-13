@@ -25,7 +25,7 @@ export class FolderApi {
   async createFolder(nameFolder: string) {
     try {
       const { data } = await api.post<IFolderResponse>("/folders", {
-        nome: String(nameFolder),
+        nome: nameFolder,
       });
 
       return data;
