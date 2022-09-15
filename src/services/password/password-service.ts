@@ -54,24 +54,4 @@ export class PasswordApi {
       throw e;
     }
   }
-
-  // async claimWithdraw(
-  //   walletAddress: string,
-  //   amount: string
-  // ): Promise<ClaimWithdrawResponse> {
-  //   const url = ${WITHDRAW_API}/withdrawal;
-
-  //   return axios
-  //     .post(url, {
-  //       net_amount: 1,
-  //     })
-  //     .then((response) =>
-  //       response.status === 200
-  //         ? response.data
-  //         : getRequestApiException(response.status, WithdrawApiException)
-  //     )
-  //     .catch((error) => {
-  //       throw error;
-  //     });
-  // }
 }
